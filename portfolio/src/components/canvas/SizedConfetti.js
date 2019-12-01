@@ -39,8 +39,10 @@ const SizedConfetti = () => {
   return (
     <Confetti
     drawShape={drawSnowflake}
-    colors={['#AEE1FF', '#CBDDF8']}
-    numberOfPieces={50}
+    colors={['#5918df', '#988e9f']}
+    numberOfPieces={100}
+    confettiSource={{x: 0, y: 0, w: width, h:0}}
+    gravity={.06}
     />
   )
 }

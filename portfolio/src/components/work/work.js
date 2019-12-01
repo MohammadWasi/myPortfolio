@@ -8,7 +8,7 @@ function Work () {
            <div className="work-title">
               <h3> Software Developer at Ezeitech</h3>
               <p>
-              Creating new features, functionality and capabilities on the Websites using Angular and React.
+              Created new features, functionality and capabilities on the Websites using Angular and React.
               </p>
            </div>
            <div className="work-title">

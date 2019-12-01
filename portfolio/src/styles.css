@@ -1,3 +1,80 @@
+@font-face {
+	font-family: "Bitter-Rose";
+	 src: url("/assets/fonts/Bitter-Rose.otf");
+  }
+@font-face {
+	font-family: "GothamRounded-Medium";
+	 src: url("/assets/fonts/GothamRounded-Medium.otf");
+  }
+  @font-face {
+	font-family: "GothamRounded-Bold";
+	 src: url("/assets/fonts/GothamRounded-Bold.otf");
+  }
+  @font-face {
+	font-family: "GothamRounded-Book";
+	 src: url("/assets/fonts/GothamRounded-Book.otf");
+  }
+  @font-face {
+	font-family: "Gotham-Medium";
+	 src: url("/assets/fonts/Gotham-Medium.otf");
+  }
+  @font-face {
+	font-family: "Gotham-Book";
+	 src: url("/assets/fonts/Gotham-Book.otf");
+  }
+  @font-face {
+	font-family: "Gotham-Light";
+	 src: url("/assets/fonts/Gotham-Light.otf");
+  }
+  @font-face {
+	font-family: "Gotham-Thin";
+	 src: url("/assets/fonts/Gotham-Thin.otf");
+  }
+  @font-face {
+	font-family: "Gotham-XLight";
+	 src: url("/assets/fonts/Gotham-XLight.otf");
+  }
+  @font-face {
+	font-family: "Gotham-Bold";
+	 src: url("/assets/fonts/Gotham-Bold.ttf");
+  }
+  @font-face {
+	font-family: "Gilroy-ExtraBold";
+	 src: url("/assets/fonts/Gilroy-ExtraBold.otf");
+  }
+
+
+
+  @font-face {
+    font-family: "Helvetica";
+     src: url("/assets/fonts/Helvetica.ttf");
+  }
+  @font-face {
+    font-family: "YTSans";
+     src: url("/assets/fonts/Helvetica.ttf");
+  }  
+  @font-face {
+    font-family: "Gotham-Bold";
+     src: url("/assets/fonts/GothamBold.ttf");
+  }
+  @font-face {
+    font-family: "GothamMedium";
+     src: url("/assets/fonts/GothamMedium.ttf");
+  }
+  @font-face {
+    font-family: "GothamRegular";
+     src: url("/assets/fonts/GothamLight Regular.otf");
+  }
+
+  @font-face {
+    font-family: "Gotham-Book";
+     src: url("/assets/fonts/GothamBook.ttf");
+  }
+
+
+
+
+
 .intro {
   position: relative;
   width: 100%;
@@ -7,6 +84,7 @@
   /* margin-top: 15rem; */
   justify-content: center;
   align-items: center;
+  font-family: 'Gotham-Light';
 
 }
 .intro-page {
@@ -27,6 +105,8 @@
 }
 p {
   font-size: 15px;
+  color: #f8f9fa;
+  font-family: 'Gotham-Thin';
 }
 h3 {
   font-size: 17px;
@@ -80,20 +160,22 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 300px;
+  /* width: 300px; */
   text-align: center;
 }
 .skills-list {
-  width: 320px;
-  margin: auto;
+  max-width: 320px;
+  /* margin: auto; */
 }
 .list-item {
     width: 100%;
     position: relative;
-    color: #fff;
+    color: #f8f9fa;
     background: #2a3b52;
     overflow: hidden;
-    margin: 8px;
+    /* margin: 8px; */
+    font-family: 'Bitter-Rose';
+    margin: 8px 0px 8px 0px;
     padding-top: 1rem;
 }
 .about-container {
@@ -113,6 +195,7 @@ canvas {
 }
 .title {
   color: #988e9f;
+  font-family: 'Gotham-Bold'
 }
 .subtitle {
   font-size: 34px;
@@ -131,6 +214,7 @@ canvas {
 }
 .purple {
   color: #5918df;
+  font-family: 'Gotham-Bold';
 }
 .ml6 {
   position: relative;
@@ -163,7 +247,7 @@ canvas {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  background: #ffffff;
+  background: #f8f9fa;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -205,7 +289,7 @@ canvas {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  background: #ffffff;
+  background: #f8f9fa;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
