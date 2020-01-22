@@ -1,7 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react';
 
 import { useTrail, useTransition, animated } from 'react-spring'
-
+import me from '../../assets/me.jpg'
 
 const items = [<Box />]
 const config = { mass: 5, tension: 2000, friction: 200 }
@@ -34,6 +34,10 @@ function About() {
 function Box () {
     const js = [':)','About />']
      return (
+       <div className="container-about">
+         <div className="img-profile">
+         <figure>
+           <img src={me} alt="profile" /></figure> </div>
        <div className='about'>
          <div className='title'>{js[1]}</div>
          <p>
@@ -46,7 +50,7 @@ function Box () {
          {/* <p>I am confident in my ability to come up </p>
          <p>with interesting ideas and working </p>
          <p>with the team to manage large and complex design projects.</p> */}
-         
+         </div>
         </div>
      )
   }

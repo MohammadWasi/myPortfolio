@@ -84,7 +84,16 @@
   /* margin-top: 15rem; */
   justify-content: center;
   align-items: center;
-  font-family: 'Gotham-Light';
+  padding: 1rem;
+  /* font-family: 'Gotham-Light';
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite; */
+  background-image: url('./assets/bg-img.jpg');
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 
 }
 .intro-page {
@@ -95,13 +104,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
   max-width: 480px;
+  padding-left: 1rem;
 }
 .about p {
-  margin: auto;
+  /* margin: auto; */
   max-width: 75%;
-  font-size: 15px;
+  font-size: 18px;
 }
 p {
   font-size: 15px;
@@ -149,23 +160,27 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row;
+  width: 80%;
   text-align: center;
-  max-width: 360px;
+  margin: 2rem;
+  /* max-width: 360px; */
 }
 .skills{
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* width: 300px; */
-  text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 65%;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+.skill img{
+  width: 96px;
 }
 .skills-list {
   max-width: 320px;
-  /* margin: auto; */
 }
 .list-item {
     width: 100%;
@@ -186,6 +201,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Gotham-Bold';
 }
 canvas {
   position: fixed!important;
@@ -195,7 +211,8 @@ canvas {
 }
 .title {
   color: #988e9f;
-  font-family: 'Gotham-Bold'
+  font-family: 'Gotham-Bold';
+  font-size: 36px;
 }
 .subtitle {
   font-size: 34px;
@@ -204,7 +221,36 @@ canvas {
 }
 @media only screen and (max-width: 600px) {
   .subtitle {
-    font-size: 20px;
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container-about {
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
+  }
+  .about {
+    align-items: center;;
+  }
+  .skills-container{
+    margin-top: 20rem;
+  }
+  .card {
+   
+    margin-bottom: 10px!important;
+  }
+  .work {
+    flex-wrap: wrap;
+    margin: unset;
+  }
+  .work-container{
+  margin-top: 10rem;
+  }
+  .contact {
+    margin-top: 5rem;
+  }
+  .navbar {
+    display: none;
   }
 }
 .social {
@@ -213,7 +259,7 @@ canvas {
   margin: 8px;
 }
 .purple {
-  color: #5918df;
+  color: #192965;
   font-family: 'Gotham-Bold';
 }
 .ml6 {
@@ -321,3 +367,56 @@ canvas {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.background {
+  
+  position
+  :
+   absolute
+  ;
+    
+  display
+  :
+   block
+  ;
+    
+  top
+  : 0;
+    
+  left
+  : 0;
+    
+  z-index
+  : 0;
+  }
+
+  /* //skills */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    width: 300px;
+    height: 150px;
+  }
+  .card p {
+    color: #988e9f;
+  }
+  .work-title {
+    padding: 1rem;
+    font-size: 17px;
+    color: #192965;
+    font-weight: 700;
+  }

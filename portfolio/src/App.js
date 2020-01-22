@@ -14,7 +14,7 @@ const App = () => {
      
      
           <div className="main-container">
-               <SizedConfetti />
+               {/* <SizedConfetti /> */}
                <section className="intro-page"> 
                <Fragment>
           <Landing />       

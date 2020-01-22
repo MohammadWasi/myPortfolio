@@ -1,30 +1,33 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+// import { Fragment } from 'react-router-dom';
 
 const Navbar = () => {
+  const scrollToRef = (ref) =>{ 
+    window.scrollTo(0, ref)
+  };
   
   return (
     <nav className='navbar navbar-dark fixed-top navbar-expand-md headspace' id="main-nav">
-      <ul>
+      <ul className="nav-style">
         <li>
-        <Link to='/'>
+        <div onClick={() => scrollToRef(0)}>        
           <i className='fas fa-code' /> Intro
-        </Link>
+        </div>
         </li>
         <li>
-        <Link to='/'>
-          <i className='fas fa-code' /> projects
-        </Link>
+        <div onClick={() => scrollToRef(645)}>
+          <i className='fas fa-code' /> About
+        </div>
         </li>
         <li>
-        <Link to='/'>
-          <i className='fas fa-code' /> about
-        </Link>
+        <div onClick={() => scrollToRef(1180)}>
+          <i className='fas fa-code' /> Skills
+        </div>
         </li>
         <li>
-        <Link to='/'>
-          <i className='fas fa-code' /> contact
-        </Link>
+        <div onClick={() => scrollToRef(1800)}>
+          <i className='fas fa-code' /> Work
+        </div>
         </li>
       </ul>
     </nav>

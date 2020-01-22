@@ -7,7 +7,7 @@ import { useTrail, useTransition, animated } from 'react-spring'
 
 
 
-const items = [<IntroBox />, 'i am a Full Stack Developer']
+const items = [<IntroBox />, 'I am a Software Engineer who likes to build Web Apps.']
 const config = { mass: 5, tension: 2000, friction: 200 }
 
 function Box() {
@@ -38,7 +38,7 @@ function Box() {
 function IntroBox () {
    return (
     <div className="intro-name">
-    Hi, my Name is <NameBox/>
+    Hi, My Name is <NameBox/>
     </div> 
    )
 }
@@ -54,7 +54,7 @@ function DesigBox () {
 }
 
 
-class MyComponent extends React.Component {
+class MyComponent extends React.Component { 
   handleScroll = e => {
     let element = e.target;
     console.log(e)
@@ -67,7 +67,10 @@ class MyComponent extends React.Component {
   render() {
     return (
       <div className="content-container" onScroll={this.handleScroll}>
-        
+
+<canvas class=
+"background"
+></canvas>
         <Box />
       </div>
     )
