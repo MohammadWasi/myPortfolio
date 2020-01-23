@@ -15,17 +15,17 @@ const Navbar = () => {
         </div>
         </li>
         <li>
-        <div onClick={() => scrollToRef(645)}>
+        <div onClick={() => scrollToRef(700)}>
           <i className='fas fa-code' /> About
         </div>
         </li>
         <li>
-        <div onClick={() => scrollToRef(1180)}>
+        <div onClick={() => scrollToRef(1300)}>
           <i className='fas fa-code' /> Skills
         </div>
         </li>
         <li>
-        <div onClick={() => scrollToRef(1800)}>
+        <div onClick={() => scrollToRef(1890)}>
           <i className='fas fa-code' /> Work
         </div>
         </li>

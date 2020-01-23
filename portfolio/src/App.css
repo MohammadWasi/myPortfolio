@@ -3,7 +3,6 @@ body {
     font-weight: 400;
     font-size: 24px;
     font-display: auto;
-    /* background-color: #191426; */
     background-color: #104346;
     color: #f9f9f9;
     min-height: 100vh;
@@ -17,12 +16,10 @@ body {
       position: relative;
       width: 100%;
       height: 100%;
-      /* padding: 1rem; */
-      /* background-color: aliceblue. */
   }
   .navbar {
-    /* transition: all 1s cubic-bezier(.165,.84,.44,1); */
     padding: 0rem 1.5rem;
+    font-family: 'Gotham-Light';
     
   }
  .navbar ul {
@@ -38,6 +35,9 @@ body {
     cursor: pointer;
     
   }
+  .navbar li :hover {
+    color: #192965;
+  }
   .nav-style {
     position: absolute;
     top: 0;
@@ -48,11 +48,12 @@ body {
     text-decoration: none;
     color: #f9f9f9!important;
   }
+  a {
+    color: #192965;
+    font-family: 'Gotham-Light';
+  }
   .headspace {
     position: fixed;
-    /* top: 0;
-    left: 0;
-    right: 0; */
     transition: -webkit-transform .3s;
     transition: transform .3s;
     transition: transform .3s,-webkit-transform .3s;
@@ -65,13 +66,8 @@ body {
     width: 100%;
   }
 .img-profile img{
-  height: 200px;
-}
-.img-profile {
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-  transition: 0.3s;
-  /* width: 40%; */
-  
+  height: 250px;
+  width: 250px;
 }
 .img-profile figure:hover::before {
 	-webkit-animation: circle .75s;

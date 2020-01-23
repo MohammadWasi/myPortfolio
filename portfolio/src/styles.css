@@ -16,7 +16,7 @@
   }
   @font-face {
 	font-family: "Gotham-Medium";
-	 src: url("/assets/fonts/Gotham-Medium.otf");
+	 src: url("./assets/fonts/Gotham-Medium.ttf");
   }
   @font-face {
 	font-family: "Gotham-Book";
@@ -24,7 +24,7 @@
   }
   @font-face {
 	font-family: "Gotham-Light";
-	 src: url("/assets/fonts/Gotham-Light.otf");
+	 src: url("./assets/fonts/Gotham-Light.ttf");
   }
   @font-face {
 	font-family: "Gotham-Thin";
@@ -33,10 +33,6 @@
   @font-face {
 	font-family: "Gotham-XLight";
 	 src: url("/assets/fonts/Gotham-XLight.otf");
-  }
-  @font-face {
-	font-family: "Gotham-Bold";
-	 src: url("/assets/fonts/Gotham-Bold.ttf");
   }
   @font-face {
 	font-family: "Gilroy-ExtraBold";
@@ -55,7 +51,7 @@
   }  
   @font-face {
     font-family: "Gotham-Bold";
-     src: url("/assets/fonts/GothamBold.ttf");
+     src: url("./assets/fonts/Gotham-Bold.ttf");
   }
   @font-face {
     font-family: "GothamMedium";
@@ -85,10 +81,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  /* font-family: 'Gotham-Light';
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite; */
+  font-family: 'Gotham-Light';
   background-image: url('./assets/bg-img.jpg');
   background-size: cover;
     background-repeat: no-repeat;
@@ -104,23 +97,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   align-items: flex-start;
-  max-width: 480px;
+  max-width: 500px;
   padding-left: 1rem;
 }
 .about p {
   /* margin: auto; */
-  max-width: 75%;
-  font-size: 18px;
+  max-width: 100%;
+  font-size: 22px;
 }
 p {
   font-size: 15px;
   color: #f8f9fa;
-  font-family: 'Gotham-Thin';
+  font-family: 'Gotham-Light';
 }
 h3 {
   font-size: 17px;
+  font-family: 'Gotham-Light';
 }
 .skills-container {
   position: relative;
@@ -149,11 +142,9 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
   width: 100%;
   text-align: center;
-  max-width: 360px;
-  margin: auto;
+  bottom: 20px;
 }
 .work {
   position: relative;
@@ -188,8 +179,7 @@ h3 {
     color: #f8f9fa;
     background: #2a3b52;
     overflow: hidden;
-    /* margin: 8px; */
-    font-family: 'Bitter-Rose';
+    font-family: 'Gotham-Light';
     margin: 8px 0px 8px 0px;
     padding-top: 1rem;
 }
@@ -223,6 +213,30 @@ canvas {
   .subtitle {
     font-size: 19px;
   }
+  p{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .subtitle {
+    font-size: 16px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .img-profile img{
+    height: 200px;
+    width: 200px;
+  }
+  .about p{
+    font-size: 16px;
+  }
+  .button {
+    margin: 1rem;
+  }
+  .card {
+    height: 140px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .container-about {
@@ -233,7 +247,7 @@ canvas {
     align-items: center;;
   }
   .skills-container{
-    margin-top: 20rem;
+    margin-top: 25rem;
   }
   .card {
    
@@ -244,7 +258,7 @@ canvas {
     margin: unset;
   }
   .work-container{
-  margin-top: 10rem;
+  margin-top: 6rem;
   }
   .contact {
     margin-top: 5rem;
@@ -406,17 +420,112 @@ canvas {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
-    text-align: center;
-    font-family: arial;
+    /* text-align: left; */
+    font-family: 'Gotham-Light';
     width: 300px;
     height: 150px;
   }
   .card p {
     color: #988e9f;
+    text-align: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .work-title {
-    padding: 1rem;
+    padding: 1rem 0 0 0;
     font-size: 17px;
     color: #192965;
     font-weight: 700;
   }
+
+
+.container-download {
+  flex: 0 0 auto;
+  width: 70px;
+  height: 150px;
+  
+  @media screen and (height <= $bp) {
+    margin: 25px auto;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 12px 10px;
+  border: 0;
+  border-radius: 3px;
+  background: #192965;
+  text-decoration: none;
+  transition: all 1.2s ease-in-out; 
+}
+.button a:hover{
+  color: #f9f9f9!important;
+  text-decoration: none; 
+}
+.button a{
+  color: #f9f9f9!important;
+  text-decoration: none; 
+}
+.button i::after {
+  content: "\f019";
+  font-size: 40px;
+  color: #fff;
+}
+.button:hover{
+  animation: pulse 0.2s 2 both;
+}
+.success {
+  border-radius: 50%;
+  background: #80bca3;
+  
+}
+.success i::after {
+  content: "\f00c";
+  color: transparent;
+  animation: change-icon 1s 0.6s linear both;
+}
+.loading 
+  i {
+    animation: loading 2s infinite linear;
+  }
+.loading 
+  i::after {
+    content: "\f1ce";
+  }
+
+@keyframes loading {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+  }
+}
+
+@keyframes change-icon {
+  0% {
+    color: transparent;
+  }
+  
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+

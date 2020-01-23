@@ -1,7 +1,8 @@
 import React, {Fragment, useEffect, useState} from 'react';
 
 import { useTrail, useTransition, animated } from 'react-spring'
-import me from '../../assets/me.jpg'
+import me from '../../assets/me.jpg';
+import resume from '../../assets/resume.pdf';
 
 const items = [<Box />]
 const config = { mass: 5, tension: 2000, friction: 200 }
@@ -32,6 +33,36 @@ function About() {
   )
 }
 function Box () {
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+
+  const download = async () => {
+    setLoading(true);
+
+   const start =  await new Promise((resolve) => {
+      setTimeout(() => {
+        console.log('first')
+        setLoading(false);
+        setSuccess(true);
+        resolve();
+    }, 3000);
+    });
+    const reset = await new Promise((resolve) => {
+      
+      setTimeout(() => {
+        console.log('works');
+        setSuccess(false);
+        resolve();
+    }, 3000);
+    });
+    const a = await start;
+    const b = await reset;
+
+    
+  }
+
+
     const js = [':)','About />']
      return (
        <div className="container-about">
@@ -47,9 +78,14 @@ function Box () {
          My skills in Javascript is continuously expanding.
          If I don't know something I always try to wrap my head around it quickly.
          </p> 
-         {/* <p>I am confident in my ability to come up </p>
-         <p>with interesting ideas and working </p>
-         <p>with the team to manage large and complex design projects.</p> */}
+         {/* <p>
+         <a href={resume} download='Wasi-resume'>Download Resume</a>
+         </p>
+         <div className="container-download" onClick={download}>
+  <a className={"button" + ' ' +(loading ? 'loading' : '') + ' ' + (success ? 'success' : '')}><i className="fa"></i></a>
+</div> */}
+<button class="button"><a href={resume} download='Wasi-resume'>Download Resume</a>
+</button>
          </div>
         </div>
      )
